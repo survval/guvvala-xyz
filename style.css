@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #2563eb;
+    --text-color: #1f2937;
+    --bg-color: #ffffff;
+    --secondary-bg: #f3f4f6;
+    --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+}
+
+.projects {
+    margin-top: 3rem;
+}
+
+.projects h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-card {
+    background-color: var(--secondary-bg);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+}
+
+.project-card a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+footer {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.875rem;
+}
+
+footer a {
+    color: #6b7280;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 640px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
