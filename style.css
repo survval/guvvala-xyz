@@ -160,8 +160,99 @@ footer a:hover {
     color: var(--primary-color);
 }
 
+.beta-testing {
+    background-color: #f0f7ff;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #d1e9ff;
+}
+
+.test-steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.step-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e1e8f0;
+    position: relative;
+}
+
+.step-number {
+    position: absolute;
+    top: -12px;
+    left: 15px;
+    background: var(--primary-color);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.step-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.step-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.step-btn {
+    display: block;
+    text-align: center;
+    background-color: #edf2f7;
+    color: #2d3748;
+    text-decoration: none;
+    padding: 0.6rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.step-btn:hover {
+    background-color: #e2e8f0;
+}
+
+.support-box {
+    margin-top: 1.5rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #e1e8f0;
+}
+
+.support-box h4 {
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.support-box ul {
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+.support-box li {
+    margin-bottom: 4px;
+}
+
 @media (max-width: 640px) {
     h1 {
         font-size: 2rem;
+    }
+
+    .test-steps {
+        grid-template-columns: 1fr;
     }
 }
