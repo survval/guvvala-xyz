@@ -29,6 +29,32 @@ header {
     margin-bottom: 3rem;
 }
 
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.top-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.top-nav a:hover {
+    color: var(--primary-color);
+}
+
 h1 {
     font-size: 2.5rem;
     font-weight: 800;
