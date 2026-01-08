@@ -199,7 +199,7 @@ footer a:hover {
     color: var(--primary-color);
 }
 
-.beta-testing {
+.app-release {
     background-color: #f0f7ff;
     padding: 2rem;
     border-radius: 12px;
@@ -207,8 +207,9 @@ footer a:hover {
 }
 
 .test-steps {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1.5rem;
     margin: 2rem 0;
 }
@@ -293,4 +294,74 @@ footer a:hover {
     .test-steps {
         grid-template-columns: 1fr;
     }
+}
+
+/* App Release & QR Styles */
+.release-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 1px solid #e1e8f0;
+    text-align: center;
+    max-width: 480px;
+    width: 100%;
+    margin: 2rem auto;
+    box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.1), 0 8px 10px -6px rgba(37, 99, 235, 0.1);
+    transition: transform 0.2s;
+}
+
+.release-card:hover {
+    transform: translateY(-2px);
+}
+
+.release-card h3 {
+    color: #1e293b;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.qr-box {
+    background: white;
+    padding: 1rem;
+    display: inline-block;
+    margin: 1.5rem 0;
+    border-radius: 12px;
+    border: 2px dashed #cbd5e1;
+    position: relative;
+}
+
+.qr-image {
+    width: 180px;
+    height: 180px;
+    display: block;
+    border-radius: 4px;
+}
+
+.scan-hint {
+    display: block;
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white !important;
+    text-decoration: none !important;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+    transition: background-color 0.2s, box-shadow 0.2s;
+    width: 100%;
+}
+
+.download-btn:hover {
+    background-color: #1d4ed8;
+    box-shadow: 0 6px 8px -1px rgba(37, 99, 235, 0.3);
 }
