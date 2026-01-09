@@ -294,6 +294,28 @@ footer a:hover {
     .test-steps {
         grid-template-columns: 1fr;
     }
+
+    .project-group-lid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-group-lid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.project-group-lid .project-card {
+    height: 100%;
+    /* Match height */
+    display: flex;
+    flex-direction: column;
+}
+
+.project-group-lid .project-card p {
+    flex-grow: 1;
 }
 
 /* App Release & QR Styles */
